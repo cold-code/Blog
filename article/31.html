@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 在2016年如何学习JavaScript？ </title>
+
+    <link rel="shortcut icon" href="../images/7favicon.ico" />
+
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/raleway.css" />
+    <link rel="stylesheet" type="text/css" href="../css/pacifico.css" />
+    <link rel="stylesheet" type="text/css" href="../css/source.css" />
+    <link rel="stylesheet" type="text/css" href="../css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="../layer/layui/css/layui.css"  media="all" />
+
+    <!-- 评论表情 -->
+    <link rel="stylesheet" href="../emoji/dist/css/jquery.emoji.css"/>
+    <link rel="stylesheet" href="../emoji/dist/css/index.css"/>
+
+    <link rel="stylesheet" type="text/css" href="../css/article_detail.css" />
+    <script src="../js/jquery.js"></script>
+    <script src="../js/jquery.sticky.js"></script>
+    <script>
+        $(window).load(function(){
+            $("#menu").sticky({ topSpacing: 0 });
+        });
+    </script>
+</head>
+<body>
+<div class="container-fluid banner text-center" id="banner">
+    <div class="row">
+        <div class="col-md-12 line">
+            <div class="tablebox">
+                <div class="banner-text" id="bannertext">
+                    <h1 class="hostyle" id="heads">Welcome to Blog</h1>
+                    <p class="pstyle">Su Han</p>
+                    <a href="#features" class="page-scroll arrow"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="navbar menubar" id="menu">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle menu-button" data-toggle="collapse" data-target="#myNavbar">
+                <span class="glyphicon glyphicon-align-justify"></span>
+            </button>
+            <a class="navbar-brand logo" href="../">Blog</a>
+        </div>
+        <div>
+            <nav class="collapse navbar-collapse" id="myNavbar" role="navigation">
+                <ul class="nav navbar-nav navbar-right navstyle">
+                    <li><a href="#features" class="page-scroll active">博客首页</a></li>
+                    <li><a href="#features" class="page-scroll">顶部</a></li>
+                    <li><a href="#gallery" class="page-scroll">文章版块</a></li>
+                    <li><a href="#about" class="page-scroll">留言板</a></li>
+                    <li><a href="#testimonials" class="page-scroll">关于博主</a></li>
+                    <li><a href="#contact" class="page-scroll">联系方式</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+<div class="features" id="features">
+    <!-- start site's main content area -->
+    <section class="content-wrap">
+        <div class="container">
+            <div class="row">
+
+                <main class="col-md-8 main-content">
+                
+                    <div class="article">
+
+                        <!-- 标题 -->
+                        <div class="title">
+                            <img src="../images/avatar/title.png" width="30" align="absmiddle"/>
+                            在2016年如何学习JavaScript？
+                        </div>
+
+                        <!-- 信息及标签 -->
+                        <div class="msg">
+                            
+                                <img src="../images/avatar/author.png" width="15" /><span class="au"><a href="../usermessage/4.html"> Vincent O </a></span>
+                            
+                                <img src="../images/avatar/time.png" width="15" /><span class="au">  2017年6月10日 </span>
+                            
+                                <img src="../images/avatar/tag1.png" width="15" /><span class="au tag"><a href="javascript:void(0)">  js </a></span>
+                            
+
+                        </div>
+
+                        <!-- 内容 -->
+                        <div class="outline">
+				            <span class="outline-con">  <p style="margin-top: 20px; margin-bottom: 20px; padding: 0px; color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">下面介绍的是我这一年来学习<a href="http://lib.csdn.net/base/javascript" class="replace_word" title="JavaScript知识库" target="_blank" style="color: rgb(223, 52, 52); text-decoration-line: none; font-weight: bold;">javascript</a>的经历。我当初给自己定下的目标是通过学习能够找到一份以<a href="http://lib.csdn.net/base/javascript" class="replace_word" title="JavaScript知识库" target="_blank" style="color: rgb(223, 52, 52); text-decoration-line: none; font-weight: bold;">js</a>开发为主的工作。</p><p style="margin-top: 20px; margin-bottom: 20px; padding: 0px; color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">首先我得承认我自己的经历并不像我接下来描述的这么一帆风顺，之所以这么写只是为了让你少走一些弯路。最近被好多人要求了分享成长经验，我才写下了这篇文章。（我现在是一名在 英国天空广播公司供职的JS开发者）</p><p style="margin-top: 20px; margin-bottom: 20px; padding: 0px; color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">在我刚入门的时候要是能有一份指南为我指明相关的信息和资料就再好不过了。而最难的部分其实是徘徊在中等水平的时候。JS相关的高级和入门的资料都特别多，而中级的资料却很难找到，在文章里我会把我当时的解决办法介绍给大家。</p><p style="margin-top: 20px; margin-bottom: 20px; padding: 0px; color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">在正文开始之前我还是要强调一下，我并不是什么大神，我自己也处于学习的阶段。在编程这个领域没有人是最棒的，假若你真的爱它，就应该保持不断地学习和进步。</p><h2 style="margin: 20px 0px; padding: 0px; color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255); font-size: 24px; font-weight: 400;"><a name="t1" target="_blank" style="color: rgb(202, 0, 0);"></a>1.</h2><p style="margin-top: 20px; margin-bottom: 20px; padding: 0px; color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">在开始学习JS之前，一定不要带着先入为主的观念，也不要打算沿用你在其他编程语言上习得的经验。</p><p style="margin-top: 20px; margin-bottom: 20px; padding: 0px; color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">我自己并没有很丰富的编程经验。在这之前我很长一段时间都是只会用WordPress做网站的码农。所以我只了解一点点<a href="http://lib.csdn.net/base/php" class="replace_word" title="PHP知识库" target="_blank" style="color: rgb(223, 52, 52); text-decoration-line: none; font-weight: bold;">PHP</a>/CSS/<a href="http://lib.csdn.net/base/html5" class="replace_word" title="HTML5知识库" target="_blank" style="color: rgb(223, 52, 52); text-decoration-line: none; font-weight: bold;">HTML5</a>的知识。但有些打算学习JavaScript的同学可能经验比较丰富，他们总会试着把对其他编程语言的理解套用在JS上。而这么做就很难利用起JS真正强大擅长的地方。</p><h2 style="margin: 20px 0px; padding: 0px; color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255); font-size: 24px; font-weight: 400;"><a name="t2" target="_blank" style="color: rgb(202, 0, 0);"></a>2.</h2><p style="margin-top: 20px; margin-bottom: 20px; padding: 0px; color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">现在来开始学习点基础知识吧，我们采用交互式学习的方法。（当然如果你经验丰富也可以直接跳过，读读<a target="_blank" href="https://link.zhihu.com/?target=https%3A//book.douban.com/subject/11874748/" class=" wrap external" rel="nofollow noreferrer" style="color: rgb(34, 85, 153); text-decoration-line: none; margin: 0px 4px 0px 0px; word-break: break-all; background: transparent;">JavaScript语言精粹</a>，不过这对于刚刚上手的人来说确实不太友好）。我当时也尝试了一些在线的交互式课程：<a target="_blank" href="https://link.zhihu.com/?target=https%3A//www.codecademy.com/learn/javascript" class=" wrap external" rel="nofollow noreferrer" style="color: rgb(34, 85, 153); text-decoration-line: none; margin: 0px 4px 0px 0px; word-break: break-all; background: transparent;">Codecademy</a></p><p><img src="https://pic4.zhimg.com/v2-d89a0d20f369d2f17eb045b8c1174b93_b.png" data-rawwidth="800" data-rawheight="306" class="origin_image zh-lightbox-thumb" width="800" data-original="https://pic4.zhimg.com/v2-d89a0d20f369d2f17eb045b8c1174b93_r.png" alt="" style="border: 0px; max-width: 100%; color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255); height: auto; vertical-align: middle; cursor: -webkit-zoom-in; transition: all 0.2s ease-in-out; position: relative; display: block; margin: 20px auto 30px;"/></p><p style="margin-top: 20px; margin-bottom: 20px; padding: 0px; color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">在线交互式课程就是允许你在浏览器里打开一个代码编辑器，通过完成一个个的小任务来到达下一关。</p><p style="margin-top: 20px; margin-bottom: 20px; padding: 0px; color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">你可以在这儿学到很多的基础知识，不过更重要的是你可以直接上手实践编写代码并运行查看结果。学习编程正是“纸上得来终觉浅，绝知此事要躬行”。（阅读书籍和教程当然是必不可少的，但真正想要掌握编程必须动手实践）</p><p style="margin-top: 20px; margin-bottom: 20px; padding: 0px; color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">另外值得一提的是很多人向我推荐的<a target="_blank" href="https://link.zhihu.com/?target=https%3A//www.freecodecamp.cn/" class=" wrap external" rel="nofollow noreferrer" style="color: rgb(34, 85, 153); text-decoration-line: none; margin: 0px 4px 0px 0px; word-break: break-all; background: transparent;">Freecodecamp</a>。这也是在线交互式学习的典范，并且它也有学习社区，对我的帮助很大。</p><h2 style="margin: 20px 0px; padding: 0px; color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255); font-size: 24px; font-weight: 400;"><a name="t3" target="_blank" style="color: rgb(202, 0, 0);"></a>3.</h2><p style="margin-top: 20px; margin-bottom: 20px; padding: 0px; color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);"><a target="_blank" href="https://link.zhihu.com/?target=https%3A//twitter.com/getify" class=" wrap external" rel="nofollow noreferrer" style="color: rgb(34, 85, 153); text-decoration-line: none; margin: 0px 4px 0px 0px; word-break: break-all; background: transparent;">Kyle Simpson</a>&nbsp;撰写的《你不知道的JS》系列对学习了解JS的作用真的非常大。整套书你都可以在<a target="_blank" href="https://link.zhihu.com/?target=https%3A//github.com/getify/You-Dont-Know-JS" class=" wrap external" rel="nofollow noreferrer" style="color: rgb(34, 85, 153); text-decoration-line: none; margin: 0px 4px 0px 0px; word-break: break-all; background: transparent;">Github</a>上免费看到。开源这套书让社区能够参与其中。目前为止已经有了102名贡献者，253个解决的issues，本书的内容质量也越来越有保障。</p><p style="margin-top: 20px; margin-bottom: 20px; padding: 0px; color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">因为我经常会读它所以购买了本书的<a target="_blank" href="https://link.zhihu.com/?target=https%3A//book.douban.com/subject/26351021/" class=" wrap external" rel="nofollow noreferrer" style="color: rgb(34, 85, 153); text-decoration-line: none; margin: 0px 4px 0px 0px; word-break: break-all; background: transparent;">纸质版</a>。也谨表我对Kyle的支持。</p><p><img src="https://pic3.zhimg.com/v2-e51d9f9b16c856dc768d6c6fefe25c2e_b.jpg" data-rawwidth="500" data-rawheight="750" class="origin_image zh-lightbox-thumb" width="500" data-original="https://pic3.zhimg.com/v2-e51d9f9b16c856dc768d6c6fefe25c2e_r.jpg" alt="" style="border: 0px; max-width: 100%; color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255); height: auto; vertical-align: middle; cursor: -webkit-zoom-in; transition: all 0.2s ease-in-out; position: relative; display: block; margin: 20px auto 30px;"/></p><p style="margin-top: 20px; margin-bottom: 20px; padding: 0px; color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">你最好从<a target="_blank" href="https://link.zhihu.com/?target=https%3A//github.com/getify/You-Dont-Know-JS/blob/master/up%2520%26%2520going/README.md%23you-dont-know-js-up--going" class=" wrap external" rel="nofollow noreferrer" style="color: rgb(34, 85, 153); text-decoration-line: none; margin: 0px 4px 0px 0px; word-break: break-all; background: transparent;">Up &amp; Going</a>开始阅读这个系列。这本书最棒的一点就是里面提到的所有内容都会有详细的解释。而不是简单粗暴地告诉你该怎么写怎么做。每个主题都有非常深入的讲解。读完之后也能给你一种透彻掌握知识的自信。</p><p style="margin-top: 20px; margin-bottom: 20px; padding: 0px; color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">整套书会介绍JS的变量/类型，对象，数组，函数，内置方法，强制多态，Truthy &amp; Falsy（JS逻辑值）等等……</p><blockquote style="color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255); margin: 20px 0px; padding-left: 1.2em; border-left: 4px solid rgb(226, 227, 228);"><p style="margin-top: 20px; margin-bottom: 20px; padding: 0px;">《你不知道的JS》也有更复杂的部分，让你深入理解JS的全部，尤其是“The Tough Parts”部分的内容。</p></blockquote><h2 style="margin: 20px 0px; padding: 0px; color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255); font-size: 24px; font-weight: 400;"><a name="t4" target="_blank" style="color: rgb(202, 0, 0);"></a>4.</h2><p style="margin-top: 20px; margin-bottom: 20px; padding: 0px; color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">之后你可以再读读《你不知道的JS》中的<a target="_blank" href="https://link.zhihu.com/?target=https%3A//github.com/getify/You-Dont-Know-JS/blob/master/scope%2520%26%2520closures/README.md%23you-dont-know-js-scope--closures" class=" wrap external" rel="nofollow noreferrer" style="color: rgb(34, 85, 153); text-decoration-line: none; margin: 0px 4px 0px 0px; word-break: break-all; background: transparent;">作用域&amp;闭包</a>部分。</p><p style="margin-top: 20px; margin-bottom: 20px; padding: 0px; color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">就像我之前强调过的，在读书的同时，上手实践也非常重要，作者也在书中给了许多实践的例子。</p><p style="margin-top: 20px; margin-bottom: 20px; padding: 0px; color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">我当时使用了<a target="_blank" href="https://link.zhihu.com/?target=http%3A//jsbin.com/%3Fjs%2Cconsole" class=" wrap external" rel="nofollow noreferrer" style="color: rgb(34, 85, 153); text-decoration-line: none; margin: 0px 4px 0px 0px; word-break: break-all; background: transparent;">JsBin</a>这个在线写代码的网站。网站界面分为HTML, CSS, JavaScript, Console and Output五个面板。我给出的链接可以只打开JS和控制台面板。</p><p style="margin-top: 20px; margin-bottom: 20px; padding: 0px; color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">这样你就能直接在浏览器里编码并查看运行的结果。</p><p><img src="https://pic2.zhimg.com/v2-b35d1bacef6f398e63e2f476f86c6931_b.png" data-rawwidth="800" data-rawheight="321" class="origin_image zh-lightbox-thumb" width="800" data-original="https://pic2.zhimg.com/v2-b35d1bacef6f398e63e2f476f86c6931_r.png" alt="" style="border: 0px; max-width: 100%; color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255); height: auto; vertical-align: middle; cursor: -webkit-zoom-in; transition: all 0.2s ease-in-out; position: relative; display: block; margin: 20px auto 30px;"/></p><h2 style="margin: 20px 0px; padding: 0px; color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255); font-size: 24px; font-weight: 400;"><a name="t5" target="_blank" style="color: rgb(202, 0, 0);"></a>5.</h2><p style="margin-top: 20px; margin-bottom: 20px; padding: 0px; color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">现在你已经掌握了很多知识，也有了些实践经验。我当时自己试着开始参与到JavaScript的社区中。注册了<a target="_blank" href="https://link.zhihu.com/?target=https%3A//twitter.com/" class=" wrap external" rel="nofollow noreferrer" style="color: rgb(34, 85, 153); text-decoration-line: none; margin: 0px 4px 0px 0px; word-break: break-all; background: transparent;">Twitter</a>和<a target="_blank" href="https://link.zhihu.com/?target=https%3A//github.com/" class=" wrap external" rel="nofollow noreferrer" style="color: rgb(34, 85, 153); text-decoration-line: none; margin: 0px 4px 0px 0px; word-break: break-all; background: transparent;">Github</a>.</p><p style="margin-top: 20px; margin-bottom: 20px; padding: 0px; color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">我在Twitter上关注了一些比较有影响力的JS开发者，博客，新闻站点:&nbsp;<a target="_blank" href="https://link.zhihu.com/?target=https%3A//twitter.com/getify" class=" wrap external" rel="nofollow noreferrer" style="color: rgb(34, 85, 153); text-decoration-line: none; margin: 0px 4px 0px 0px; word-break: break-all; background: transparent;">@getify</a>,&nbsp;<a target="_blank" href="https://link.zhihu.com/?target=https%3A//twitter.com/BrendanEich" class=" wrap external" rel="nofollow noreferrer" style="color: rgb(34, 85, 153); text-decoration-line: none; margin: 0px 4px 0px 0px; word-break: break-all; background: transparent;">@BrendanEich</a>,&nbsp;<a target="_blank" href="https://link.zhihu.com/?target=https%3A//twitter.com/holtbt" class=" wrap external" rel="nofollow noreferrer" style="color: rgb(34, 85, 153); text-decoration-line: none; margin: 0px 4px 0px 0px; word-break: break-all; background: transparent;">@holtbt</a>,&nbsp;<a target="_blank" href="https://link.zhihu.com/?target=https%3A//twitter.com/jhusain" class=" wrap external" rel="nofollow noreferrer" style="color: rgb(34, 85, 153); text-decoration-line: none; margin: 0px 4px 0px 0px; word-break: break-all; background: transparent;">@jhusain</a>,&nbsp;<a target="_blank" href="https://link.zhihu.com/?target=https%3A//twitter.com/andrestaltz" class=" wrap external" rel="nofollow noreferrer" style="color: rgb(34, 85, 153); text-decoration-line: none; margin: 0px 4px 0px 0px; word-break: break-all; background: transparent;">@andrestaltz</a>,&nbsp;<a target="_blank" href="https://link.zhihu.com/?target=https%3A//twitter.com/drboolean" class=" wrap external" rel="nofollow noreferrer" style="color: rgb(34, 85, 153); text-decoration-line: none; margin: 0px 4px 0px 0px; word-break: break-all; background: transparent;">@drboolean</a>&nbsp;当然你要是愿意也可以关注我&nbsp;<a target="_blank" href="https://link.zhihu.com/?target=https%3A//twitter.com/_cmdv_" class=" wrap external" rel="nofollow noreferrer" style="color: rgb(34, 85, 153); text-decoration-line: none; margin: 0px 4px 0px 0px; word-break: break-all; background: transparent;">@cmdv</a></p><p style="margin-top: 20px; margin-bottom: 20px; padding: 0px; color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">Github是阅览代码示例、拥有无数天才创造的工具/框架/类库的绝佳所在。你同样也可以在上面分享你的项目或与他人合作。不管你是用什么什么语言，开源对整个编程圈都意义非凡。有些人可能不这么想，但我十分乐意分享我的知识，与他人合作做出一些贡献。</p><h2 style="margin: 20px 0px; padding: 0px; color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255); font-size: 24px; font-weight: 400;"><a name="t6" target="_blank" style="color: rgb(202, 0, 0);"></a>6.</h2><p style="margin-top: 20px; margin-bottom: 20px; padding: 0px; color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">到了这里我大概就达到了我在文章开头提到的中级阶段了。我有一种已经掌握了基础但就此止步不前的感觉。</p><p style="margin-top: 20px; margin-bottom: 20px; padding: 0px; color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">这也正是各式各样的框架层出不穷的时候，各种炒作，说他们的框架有多好用多强大。那个时候Angular看起来很不错，也有很强大的社区支持。通过运用这些框架我也真的能开发出来点东西了，我当时也尝试过<a target="_blank" href="https://link.zhihu.com/?target=https%3A//ampersandjs.com/" class=" wrap external" rel="nofollow noreferrer" style="color: rgb(34, 85, 153); text-decoration-line: none; margin: 0px 4px 0px 0px; word-break: break-all; background: transparent;">Ampersand.js</a>（Ampersand.js是一个所谓去框架化的框架，其实就是把框架的各个功能拆分成独立模块，在使用的时候你可以只载入自己需要的部分）</p><p style="margin-top: 20px; margin-bottom: 20px; padding: 0px; color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">选择学习框架是我对生命的严重浪费。并不是说这些框架烂，而是因为JS的框架日新月异，层出不穷，你很难选到对的那个。然后我才意识到，我的目标应该是学习理解这些框架背后到底是怎么运作的。据我所知，从长远来讲，学习掌握深入的原生JS要比你把所有精力都投入到框架里更有前途。</p><p style="margin-top: 20px; margin-bottom: 20px; padding: 0px; color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">这段时间里我有很深的挫败感，变得焦躁不安，达不到我想要的目标。我开始看一些有关失败的心灵鸡汤。在你学习JS这种充满无限可能的语言时，你就要做好面对无数选择的准备。眼光放长远一些，一定不要放弃。（我知道这是说起来容易，做起来难）</p><h2 style="margin: 20px 0px; padding: 0px; color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255); font-size: 24px; font-weight: 400;"><a name="t7" target="_blank" style="color: rgb(202, 0, 0);"></a>7.</h2><p style="margin-top: 20px; margin-bottom: 20px; padding: 0px; color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">你需要记住这个阶段，现在你已经通过阅读《你不知道的JS》掌握了一些技巧，也有了一些实践经验。接下来学什么呢？我自己当时开始看一些视频教程。</p><p style="margin-top: 20px; margin-bottom: 20px; padding: 0px; color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">《你不知道的JS》的作者Kyle Simpson同样也在<a target="_blank" href="https://link.zhihu.com/?target=https%3A//frontendmasters.com/" class=" wrap external" rel="nofollow noreferrer" style="color: rgb(34, 85, 153); text-decoration-line: none; margin: 0px 4px 0px 0px; word-break: break-all; background: transparent;">Frontendmasters.com</a>上提供了很多JS相关的教程。尤其推荐<a target="_blank" href="https://link.zhihu.com/?target=https%3A//frontendmasters.com/courses/advanced-javascript/" class=" wrap external" rel="nofollow noreferrer" style="color: rgb(34, 85, 153); text-decoration-line: none; margin: 0px 4px 0px 0px; word-break: break-all; background: transparent;">Advanced JavaScript</a>，你也可以在Pluralsight找到<a target="_blank" href="https://link.zhihu.com/?target=http%3A//www.pluralsight.com/courses/advanced-javascript" class=" wrap external" rel="nofollow noreferrer" style="color: rgb(34, 85, 153); text-decoration-line: none; margin: 0px 4px 0px 0px; word-break: break-all; background: transparent;">这个教程</a>。</p><p><img src="https://pic3.zhimg.com/v2-d90de33928ff5e57f7472549d15cb13a_b.png" data-rawwidth="1257" data-rawheight="757" class="origin_image zh-lightbox-thumb" width="1257" data-original="https://pic3.zhimg.com/v2-d90de33928ff5e57f7472549d15cb13a_r.png" alt="" style="border: 0px; max-width: 100%; color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255); height: auto; vertical-align: middle; cursor: -webkit-zoom-in; transition: all 0.2s ease-in-out; position: relative; display: block; margin: 20px auto 30px;"/></p><p style="margin-top: 20px; margin-bottom: 20px; padding: 0px; color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">当然你也可以找到一些免费的学习资料，比如继续阅读《你不知道的JS》系列，但是看一个人对你讲授并带你过一遍代码对消化知识确实很有帮助。Frontendmasters的视频教程比较棒的一点是它鼓励你在观看同时也自己动手写一些代码。要是中途遇到困难也可以倒回反复观看。</p><p style="margin-top: 20px; margin-bottom: 20px; padding: 0px; color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">你需要明确的一点是那些有丰富经验和知识的人教授这些课程制作视频都需要相当的付出。为这些知识和劳动付费也是理所应当的。</p><p style="margin-top: 20px; margin-bottom: 20px; padding: 0px; color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);"><a target="_blank" href="https://link.zhihu.com/?target=https%3A//frontendmasters.com/courses/advanced-javascript/" class=" wrap external" rel="nofollow noreferrer" style="color: rgb(34, 85, 153); text-decoration-line: none; margin: 0px 4px 0px 0px; word-break: break-all; background: transparent;">Advanced JavaScript</a>这一套视频教程涵盖了《你不知道的JS》之前提到的两本以及<a target="_blank" href="https://link.zhihu.com/?target=https%3A//github.com/getify/You-Dont-Know-JS/tree/master/this%2520%2526%2520object%2520prototypes" class=" wrap external" rel="nofollow noreferrer" style="color: rgb(34, 85, 153); text-decoration-line: none; margin: 0px 4px 0px 0px; word-break: break-all; background: transparent;">This &amp; Object Prototypes</a>的内容。看视频的同时你也可以翻翻书。This &amp; Object Prototypes这本书提供的内容非常实用。例如对象连接模式OLOO(objects linking to other objects).这就是我之前提到的JS所独有的特性，而不是像其他语言中使用Class。当然，这里也有一篇关于<a target="_blank" href="https://link.zhihu.com/?target=https%3A//medium.com/javascript-scene/how-to-fix-the-es6-class-keyword-2d42bb3f4caf" class=" wrap external" rel="nofollow noreferrer" style="color: rgb(34, 85, 153); text-decoration-line: none; margin: 0px 4px 0px 0px; word-break: break-all; background: transparent;">ES6 Class</a>的介绍。不过要知道人们对Class的应用也一直争论不休，这并不是唯一的方法，全看个人选择。</p><h2 style="margin: 20px 0px; padding: 0px; color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255); font-size: 24px; font-weight: 400;"><a name="t8" target="_blank" style="color: rgb(202, 0, 0);"></a>8.</h2><p style="margin-top: 20px; margin-bottom: 20px; padding: 0px; color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">Eric Elliott 在Github有一个很棒的收集列表<a target="_blank" href="https://link.zhihu.com/?target=https%3A//github.com/ericelliott/essential-javascript-links" class=" wrap external" rel="nofollow noreferrer" style="color: rgb(34, 85, 153); text-decoration-line: none; margin: 0px 4px 0px 0px; word-break: break-all; background: transparent;">Essential JavaScript Links</a>.我推荐你去看看，因为里面收集的内容确实非常棒。这里面同样包括新闻站点、Twitter、视频等内容，我从这里面摘出了一些符合你现阶段所需了解的内容：</p><ul style="color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255); margin-top: 20px; margin-bottom: 20px; padding: 0px 0px 0px 24px;" class=" list-paddingleft-2"><li><p><a target="_blank" href="https://link.zhihu.com/?target=https%3A//medium.com/javascript-scene/the-two-pillars-of-javascript-ee6f3281e7f3" class=" wrap external" rel="nofollow noreferrer" style="color: rgb(34, 85, 153); text-decoration-line: none; margin: 0px 4px 0px 0px; word-break: break-all; background: transparent;">The Two Pillars of JavaScript Part 1: Prototypal OO</a></p></li><li><p><a target="_blank" href="https://link.zhihu.com/?target=https%3A//medium.com/javascript-scene/the-two-pillars-of-javascript-pt-2-functional-programming-a63aa53a41a4" class=" wrap external" rel="nofollow noreferrer" style="color: rgb(34, 85, 153); text-decoration-line: none; margin: 0px 4px 0px 0px; word-break: break-all; background: transparent;">The Two Pillars of JavaScript Part 2: Functional Programming</a></p></li></ul><p style="margin-top: 20px; margin-bottom: 20px; padding: 0px; color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">现在我们开始结合在线视频学习了解更深入的内容，这也正是我度过中级阶段的方法。</p><p style="margin-top: 20px; margin-bottom: 20px; padding: 0px; color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);"><a target="_blank" href="https://link.zhihu.com/?target=https%3A//twitter.com/_ericelliott" class=" wrap external" rel="nofollow noreferrer" style="color: rgb(34, 85, 153); text-decoration-line: none; margin: 0px 4px 0px 0px; word-break: break-all; background: transparent;">Eric Elliott</a>总是提供相当多非常棒的内容，包括原创和分享他人的。（译者之前也翻译过Eric Elliott的文章）</p><p style="margin-top: 20px; margin-bottom: 20px; padding: 0px; color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">这个阶段的我对函数式编程特别感兴趣，而事实上我都没意识到自己当时学的就是函数式编程。函数式编程听起来可能有些太深奥了，可随着你的深入了解，你会发现它其实是非常实用的。不过你要是真的不感兴趣，也有别的学习方向可以选择。</p><p style="margin-top: 20px; margin-bottom: 20px; padding: 0px; color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">来自Jafar Husain在<a target="_blank" href="https://link.zhihu.com/?target=http%3A//egghead.io" class=" external" rel="nofollow noreferrer" style="color: rgb(34, 85, 153); text-decoration-line: none; margin: 0px 4px 0px 0px; word-break: break-all; background: transparent;"><span class="invisible" style="font-stretch: normal; font-size: 0px; line-height: 0; font-family: a; color: transparent; text-shadow: none; border: 0px; background-color: transparent;">http://</span><span class="visible">egghead.io</span><span class="invisible" style="font-stretch: normal; font-size: 0px; line-height: 0; font-family: a; color: transparent; text-shadow: none; border: 0px; background-color: transparent;"></span></a>上的教程<a target="_blank" href="https://link.zhihu.com/?target=https%3A//egghead.io/series/mastering-asynchronous-programming-the-end-of-the-loop" class=" wrap external" rel="nofollow noreferrer" style="color: rgb(34, 85, 153); text-decoration-line: none; margin: 0px 4px 0px 0px; word-break: break-all; background: transparent;">Asynchronous Programming: The End of The Loop</a>是对函数式编程更底层的一个介绍。不过首先还是让我们了解些别的内容再回来深入这个主题吧。</p><h2 style="margin: 20px 0px; padding: 0px; color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255); font-size: 24px; font-weight: 400;"><a name="t9" target="_blank" style="color: rgb(202, 0, 0);"></a>9.</h2><p style="margin-top: 20px; margin-bottom: 20px; padding: 0px; color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">也许你还不了解，或者你可能多少注意到了。大多数的JS类库、插件、框架都在一个叫做NPM的包管理软件上（译者：是是是，我知道最近有一个叫<a target="_blank" href="https://link.zhihu.com/?target=https%3A//yarnpkg.com/" class=" wrap external" rel="nofollow noreferrer" style="color: rgb(34, 85, 153); text-decoration-line: none; margin: 0px 4px 0px 0px; word-break: break-all; background: transparent;">Yarn</a>的包管理器火了，不过还是不展开讲以免混淆视听），这就好像Ruby有Gems，<a href="http://lib.csdn.net/base/php" class="replace_word" title="PHP知识库" target="_blank" style="color: rgb(223, 52, 52); text-decoration-line: none; font-weight: bold;">php</a>有Composer一样。想要使用NPM你必须先安装一个叫做NodeJS的东西：</p><blockquote style="color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255); margin: 20px 0px; padding-left: 1.2em; border-left: 4px solid rgb(226, 227, 228);"><p style="margin-top: 20px; margin-bottom: 20px; padding: 0px;"><a href="http://lib.csdn.net/base/nodejs" class="replace_word" title="Node.js知识库" target="_blank" style="color: rgb(223, 52, 52); text-decoration-line: none; font-weight: bold;">Node.js</a>&nbsp;是一个基于 Chrome V8 引擎的 JavaScript 运行环境。<a href="http://lib.csdn.net/base/nodejs" class="replace_word" title="Node.js知识库" target="_blank" style="color: rgb(223, 52, 52); text-decoration-line: none; font-weight: bold;">node.js</a>&nbsp;使用了一个事件驱动、非阻塞式 I/O 的模型，使其轻量又高效。Node.js 的包管理器 npm，是全球最大的开源库生态系统。——Node.js中文网</p></blockquote><p style="margin-top: 20px; margin-bottom: 20px; padding: 0px; color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">通过Node你可以在服务器端运行JS，这又给了JS无限的可能。</p><p style="margin-top: 20px; margin-bottom: 20px; padding: 0px; color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">如果你想进一步了解Node，这里有两个不错的付费教程：&nbsp;<a target="_blank" href="https://link.zhihu.com/?target=http%3A//www.pluralsight.com/courses/node-intro" class=" wrap external" rel="nofollow noreferrer" style="color: rgb(34, 85, 153); text-decoration-line: none; margin: 0px 4px 0px 0px; word-break: break-all; background: transparent;">Plurasight</a>&nbsp;+&nbsp;<a target="_blank" href="https://link.zhihu.com/?target=https%3A//frontendmasters.com/courses/building-web-apps-with-node-js/" class=" wrap external" rel="nofollow noreferrer" style="color: rgb(34, 85, 153); text-decoration-line: none; margin: 0px 4px 0px 0px; word-break: break-all; background: transparent;">Frontendmasters</a>.</p><ul style="color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255); margin-top: 20px; margin-bottom: 20px; padding: 0px 0px 0px 24px;" class=" list-paddingleft-2"><li><p><a target="_blank" href="https://link.zhihu.com/?target=http%3A//www.runoob.com/nodejs/nodejs-tutorial.html" class=" wrap external" rel="nofollow noreferrer" style="color: rgb(34, 85, 153); text-decoration-line: none; margin: 0px 4px 0px 0px; word-break: break-all; background: transparent;">Node.js 教程</a><br/></p></li><li><p><a target="_blank" href="https://link.zhihu.com/?target=https%3A//nodeschool.io/zh-cn/" class=" wrap external" rel="nofollow noreferrer" style="color: rgb(34, 85, 153); text-decoration-line: none; margin: 0px 4px 0px 0px; word-break: break-all; background: transparent;">NodeSchool</a><br/></p></li></ul><h2 style="margin: 20px 0px; padding: 0px; color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255); font-size: 24px; font-weight: 400;"><a name="t10" target="_blank" style="color: rgb(202, 0, 0);"></a>10.</h2><p style="margin-top: 20px; margin-bottom: 20px; padding: 0px; color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">这个阶段你应该已经可以很熟练的运用原生JS开发应用了。我之前确实说过我刻意避开了框架，但并不代表框架不是一种好的东西。所以我开始试着了解有关框架的知识。</p><p style="margin-top: 20px; margin-bottom: 20px; padding: 0px; color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">我随后了解到<a target="_blank" href="https://link.zhihu.com/?target=http%3A//facebook.github.io/react/" class=" wrap external" rel="nofollow noreferrer" style="color: rgb(34, 85, 153); text-decoration-line: none; margin: 0px 4px 0px 0px; word-break: break-all; background: transparent;">React</a>成为了最火的框架，它并不是一个功能全面的框架，只是解决了应用视图的部分。</p><p><img src="https://pic4.zhimg.com/v2-0402cd1b692770fa83e99ad6ff6a52fb_b.png" data-rawwidth="600" data-rawheight="167" class="origin_image zh-lightbox-thumb" width="600" data-original="https://pic4.zhimg.com/v2-0402cd1b692770fa83e99ad6ff6a52fb_r.png" alt="" style="border: 0px; max-width: 100%; color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255); height: auto; vertical-align: middle; cursor: -webkit-zoom-in; transition: all 0.2s ease-in-out; position: relative; display: block; margin: 20px auto 30px;"/></p><p style="margin-top: 20px; margin-bottom: 20px; padding: 0px; color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">它提供了很多有价值的解决方案，例如模块化组件如何处理状态（大概讲就是用一个全局的state通过props传入应用）。你并不局限于只用<a href="http://lib.csdn.net/base/react" class="replace_word" title="React知识库" target="_blank" style="color: rgb(223, 52, 52); text-decoration-line: none; font-weight: bold;">React</a>，你可以用任何方式处理你的数据层、后端、API……</p><p style="margin-top: 20px; margin-bottom: 20px; padding: 0px; color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">同样的你也可以通过一些很棒的视频教程来学习<a href="http://lib.csdn.net/base/react" class="replace_word" title="React知识库" target="_blank" style="color: rgb(223, 52, 52); text-decoration-line: none; font-weight: bold;">react</a>：</p><p style="margin-top: 20px; margin-bottom: 20px; padding: 0px; color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">最开始我在<a target="_blank" href="https://link.zhihu.com/?target=https%3A//reactweek.com/" class=" wrap external" rel="nofollow noreferrer" style="color: rgb(34, 85, 153); text-decoration-line: none; margin: 0px 4px 0px 0px; word-break: break-all; background: transparent;">ReactWeek</a>参加了一个为期5天的课程。但其间遇到了很多问题和困难。Ryan在<a target="_blank" href="https://link.zhihu.com/?target=https%3A//frontendmasters.com/courses/react/" class=" wrap external" rel="nofollow noreferrer" style="color: rgb(34, 85, 153); text-decoration-line: none; margin: 0px 4px 0px 0px; word-break: break-all; background: transparent;">FrontendMasters</a>提供了一个更简明的教程。</p><ul style="color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255); margin-top: 20px; margin-bottom: 20px; padding: 0px 0px 0px 24px;" class=" list-paddingleft-2"><li><p><a target="_blank" href="https://link.zhihu.com/?target=http%3A//www.ruanyifeng.com/blog/2015/03/react.html" class=" wrap external" rel="nofollow noreferrer" style="color: rgb(34, 85, 153); text-decoration-line: none; margin: 0px 4px 0px 0px; word-break: break-all; background: transparent;">React 入门实例教程</a></p></li><li><p><a target="_blank" href="https://link.zhihu.com/?target=http%3A//www.runoob.com/react/react-tutorial.html" class=" wrap external" rel="nofollow noreferrer" style="color: rgb(34, 85, 153); text-decoration-line: none; margin: 0px 4px 0px 0px; word-break: break-all; background: transparent;">React 教程</a></p></li></ul><h2 style="margin: 20px 0px; padding: 0px; color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255); font-size: 24px; font-weight: 400;"><a name="t11" target="_blank" style="color: rgb(202, 0, 0);"></a>11.</h2><p style="margin-top: 20px; margin-bottom: 20px; padding: 0px; color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">现在开始你可以选择继续巩固或者学习新的知识了。我本人对函数式编程比较感兴趣，所以学习了一个由<a target="_blank" href="https://link.zhihu.com/?target=https%3A//twitter.com/mattpodwysocki" class=" wrap external" rel="nofollow noreferrer" style="color: rgb(34, 85, 153); text-decoration-line: none; margin: 0px 4px 0px 0px; word-break: break-all; background: transparent;">Matt Podwysocki</a>开发叫做<a target="_blank" href="https://link.zhihu.com/?target=https%3A//github.com/Reactive-Extensions/RxJS" class=" wrap external" rel="nofollow noreferrer" style="color: rgb(34, 85, 153); text-decoration-line: none; margin: 0px 4px 0px 0px; word-break: break-all; background: transparent;">RxJS</a>的Reactive编程的解决方案。</p><p style="margin-top: 20px; margin-bottom: 20px; padding: 0px; color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">我之前也参加了一个<a target="_blank" href="https://link.zhihu.com/?target=https%3A//frontendmasters.com/courses/asynchronous-javascript/" class=" wrap external" rel="nofollow noreferrer" style="color: rgb(34, 85, 153); text-decoration-line: none; margin: 0px 4px 0px 0px; word-break: break-all; background: transparent;">Rx.js的教程</a>，另外在<a target="_blank" href="https://link.zhihu.com/?target=https%3A//egghead.io/technologies/rx%3Forder%3DASC" class=" wrap external" rel="nofollow noreferrer" style="color: rgb(34, 85, 153); text-decoration-line: none; margin: 0px 4px 0px 0px; word-break: break-all; background: transparent;">Egghead.io</a>上也有许多RxJS的相关教程。</p><p style="margin-top: 20px; margin-bottom: 20px; padding: 0px; color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">同样你也可以在<a target="_blank" href="https://link.zhihu.com/?target=https%3A//gitter.im/Reactive-Extensions/RxJS" class=" wrap external" rel="nofollow noreferrer" style="color: rgb(34, 85, 153); text-decoration-line: none; margin: 0px 4px 0px 0px; word-break: break-all; background: transparent;">gitter</a>上参与RxJS的讨论，直接用Github账号登录就可以。</p><ul style="color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255); margin-top: 20px; margin-bottom: 20px; padding: 0px 0px 0px 24px;" class=" list-paddingleft-2"><li><p><a target="_blank" href="https://link.zhihu.com/?target=http%3A//www.oschina.net/translate/rxjs-streams" class=" wrap external" rel="nofollow noreferrer" style="color: rgb(34, 85, 153); text-decoration-line: none; margin: 0px 4px 0px 0px; word-break: break-all; background: transparent;">使用 RxJS 实现 JavaScript 的 Reactive 编程</a></p></li><li><p><a target="_blank" href="https://link.zhihu.com/?target=http%3A//www.tuicool.com/articles/iYv2qiR" class=" wrap external" rel="nofollow noreferrer" style="color: rgb(34, 85, 153); text-decoration-line: none; margin: 0px 4px 0px 0px; word-break: break-all; background: transparent;">RxJs 介绍</a></p></li><li><p><a target="_blank" href="https://link.zhihu.com/?target=http%3A//blog.csdn.net/tianjun2012/article/details/51245898" class=" wrap external" rel="nofollow noreferrer" style="color: rgb(34, 85, 153); text-decoration-line: none; margin: 0px 4px 0px 0px; word-break: break-all; background: transparent;">RxJS入门</a></p></li></ul><h2 style="margin: 20px 0px; padding: 0px; color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255); font-size: 24px; font-weight: 400;"><a name="t12" target="_blank" style="color: rgb(202, 0, 0);"></a>12.</h2><p style="margin-top: 20px; margin-bottom: 20px; padding: 0px; color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">这篇文章到这里差不多就要结束了。因为在这个阶段你已经可以自由选择自己想要发展的方向了。</p><p style="margin-top: 20px; margin-bottom: 20px; padding: 0px; color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">在这里推荐一本非常棒的讲解函数式编程的书<a target="_blank" href="https://link.zhihu.com/?target=http%3A//drboolean.gitbooks.io/mostly-adequate-guide/" class=" wrap external" rel="nofollow noreferrer" style="color: rgb(34, 85, 153); text-decoration-line: none; margin: 0px 4px 0px 0px; word-break: break-all; background: transparent;">Mostly Adequate Guide</a>，作者是<a target="_blank" href="https://link.zhihu.com/?target=https%3A//twitter.com/drboolean" class=" wrap external" rel="nofollow noreferrer" style="color: rgb(34, 85, 153); text-decoration-line: none; margin: 0px 4px 0px 0px; word-break: break-all; background: transparent;">Brian Lonsdorf</a>，他同样<a target="_blank" href="https://link.zhihu.com/?target=https%3A//frontendmasters.com/courses/functional-javascript/" class=" wrap external" rel="nofollow noreferrer" style="color: rgb(34, 85, 153); text-decoration-line: none; margin: 0px 4px 0px 0px; word-break: break-all; background: transparent;">在这里</a>提供了相关的教程。</p><p><img src="https://pic2.zhimg.com/v2-2ab569305d1c16a0ff96f72931ce5d05_b.jpg" data-rawwidth="414" data-rawheight="422" class="content_image" width="414" alt="" style="border: 0px; max-width: 100%; color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255); height: auto; vertical-align: middle; display: block; margin: 20px auto 30px;"/><br style="color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);"/></p><p style="margin-top: 20px; margin-bottom: 20px; padding: 0px; color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">函数式编程是一个非常有趣的主题，我想我肯定要在这个上面花费相当一段时间，而且可能永远都学不完。</p><p style="margin-top: 20px; margin-bottom: 20px; padding: 0px; color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">André Staltz 创建了一个很有趣的叫做<a target="_blank" href="https://link.zhihu.com/?target=http%3A//cycle.js.org/" class=" wrap external" rel="nofollow noreferrer" style="color: rgb(34, 85, 153); text-decoration-line: none; margin: 0px 4px 0px 0px; word-break: break-all; background: transparent;">Cycle.js</a>的项目，它结合了函数式编程和RxJS。虽然我对它的了解还不深，但假如你喜欢React的话，学习它也是相当不错的一个选择。</p><p><img src="https://pic3.zhimg.com/v2-b094736476de700774747322448bf07a_b.png" data-rawwidth="699" data-rawheight="859" class="origin_image zh-lightbox-thumb" width="699" data-original="https://pic3.zhimg.com/v2-b094736476de700774747322448bf07a_r.png" alt="" style="border: 0px; max-width: 100%; color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255); height: auto; vertical-align: middle; cursor: -webkit-zoom-in; transition: all 0.2s ease-in-out; position: relative; display: block; margin: 20px auto 30px;"/></p><p style="margin-top: 20px; margin-bottom: 20px; padding: 0px; color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">学到这里也就到了我现在的阶段。也许是我对编程的热爱让我能够在一年的时间内学习了这么多的内容把。不过也不要认为我把它们都记得很清楚，我时不时也会复习之前所学过的内容，也在努力在Github上开更多的repos实践。我也刚刚真正将自己掌握的知识应用在实际工作中，这是对我的挑战和考验，我也准备好了在失败中吸取教训并继续我的学习旅程。</p><p style="margin-top: 20px; margin-bottom: 20px; padding: 0px; color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">最后再补充一些<a href="http://lib.csdn.net/base/softwaretest" class="replace_word" title="软件测试知识库" target="_blank" style="color: rgb(223, 52, 52); text-decoration-line: none; font-weight: bold;">测试</a>/测试驱动开发(TDD)相关的内容：</p><ul style="color: rgb(51, 51, 51); font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; white-space: normal; background-color: rgb(255, 255, 255); margin-top: 20px; margin-bottom: 20px; padding: 0px 0px 0px 24px;" class=" list-paddingleft-2"><li><p><a target="_blank" href="https://link.zhihu.com/?target=https%3A//medium.com/javascript-scene/what-every-unit-test-needs-f6cd34d9836d" class=" wrap external" rel="nofollow noreferrer" style="color: rgb(34, 85, 153); text-decoration-line: none; margin: 0px 4px 0px 0px; word-break: break-all; background: transparent;">5 questions every unit test must answer</a></p></li><li><p><a target="_blank" href="https://link.zhihu.com/?target=https%3A//medium.com/javascript-scene/why-i-use-tape-instead-of-mocha-so-should-you-6aa105d8eaf4" class=" wrap external" rel="nofollow noreferrer" style="color: rgb(34, 85, 153); text-decoration-line: none; margin: 0px 4px 0px 0px; word-break: break-all; background: transparent;">Why I use tape instead of Mocha and so should you</a></p></li><li><p><a target="_blank" href="https://link.zhihu.com/?target=https%3A//github.com/Cmdv/Essential-TDD-BDD-React-list" class=" wrap external" rel="nofollow noreferrer" style="color: rgb(34, 85, 153); text-decoration-line: none; margin: 0px 4px 0px 0px; word-break: break-all; background: transparent;">TDD React resources</a></p></li><li><p><a target="_blank" href="https://link.zhihu.com/?target=https%3A//github.com/Cmdv/React-Testing-Webpack-Tape" class=" wrap external" rel="nofollow noreferrer" style="color: rgb(34, 85, 153); text-decoration-line: none; margin: 0px 4px 0px 0px; word-break: break-all; background: transparent;">Testing React Suite</a></p></li><li><p><a target="_blank" href="https://link.zhihu.com/?target=http%3A//www.infoq.com/cn/presentations/zxq-tdd/" class=" wrap external" rel="nofollow noreferrer" style="color: rgb(34, 85, 153); text-decoration-line: none; margin: 0px 4px 0px 0px; word-break: break-all; background: transparent;">测试驱动开发</a></p></li></ul><p><br/></p> </span>
+                        </div>
+
+                        <!-- 点赞、收藏 -->
+                        <div class="all">
+                            
+                                <div class="left"> <a href="javascript:void(0)" class="layui-btn layui-btn-radius layui-btn-danger zan op"  >点赞(1)</a> </div>
+                                <div class="right"> <a href="javascript:void(0)" class="layui-btn layui-btn-radius layui-btn-warm shoucang" >收藏(1)</a> </div>
+                            
+                            <div style="clear:both;"></div>
+                        </div>
+                        <div style="clear:both;"></div>
+
+                        <!-- 上、下一篇 -->
+                        <div class="updo">
+                            
+                                <div class="up col-md-6 col-sm-6 col-xs-12"><a href="../article/32.html">上一篇：快速学习JS的思考方法</a> </div>
+                            
+                            
+                            <div class="up col-md-6 col-sm-6 col-xs-12"><a href="../article/30.html">下一篇：纯福利 | 前端新人面试题汇总-基础篇</a> </div>
+                            
+                        </div>
+                        <div style="clear:both;"></div>
+
+                        <!-- 评论 -->
+                        <div class="comm">
+                            <p class="tit">评论：</p>
+                            <div id="editor" placeholder="# 发表你的看法吧 #" class="form-control con" name="content" max-length="3" contenteditable="true"></div>
+                            <div class="butt">
+                                <button id="btn" class="btn btn-sm btn-default imgbtn"></button>
+                                <button class="layui-btn send"> 发表 </button>
+                                <div style="clear:both;"></div>
+                            </div>
+                        </div>
+                        <!--评论楼层-->
+                        <div class="commfloor">
+                            <p class="t"><span class="tit">最新评论</span></p>
+                            
+                        </div>
+                        <div style="clear:both;"></div>
+                    </div>
+                
+                </main>
+
+                <aside class="col-md-4 sidebar hidden-xs hidden-sm">
+                    <!-- start tag cloud widget -->
+                    <div class="widget">
+                        <div class="log-img">
+                            <div class="log-img-worp">
+                                <div class="img"><img src="../images/blogmsg4.png" alt="博学楼" width="80" height="80" /></div>
+                                <div class="font">
+                                    <h3>欢迎来到CC博园</h3>
+                                    <p>修身 齐家 治国 平天下</p>
+                                </div>
+                            </div>
+                            
+                            <!-- 登录框 -->
+                            <div class="log-login-worp">
+                                <div class="login-worp-left">
+                                    <a href="../login.html" class="layui-btn layui-btn-normal">登录</a>
+                                </div>
+                                <div class="login-worp-right">
+                                    <a href="../reg.html" class="layui-btn layui-btn-normal">注册</a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <!-- end tag cloud widget -->
+
+                    <!-- start tag cloud widget -->
+                    <div class="widget">
+                        <h4 class="title">
+                            <span class="newtitle">文章搜索</span><img src="../images/search.png" width="26" style="margin:5px;" />
+                        </h4>
+                        <div class="content community">
+                            <div class="search">
+                                <form action="../search" method="get" class="form-inline" role="form" >
+                                    <div class="form-group">
+                                        <input type="text" class="form-control searval" name="search" placeholder="请输入关键词" />
+                                    </div>
+                                    <input type="submit" value="搜索" class="sear btn btn-default" onclick="return check()" />
+                                    <span class="msg" style="display: none">请输入关键字进行搜索</span>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end tag cloud widget -->
+
+                    <!-- start tag cloud widget -->
+                    <div class="widget">
+                        <h4 class="title">
+                            <span class="newtitle">最新评论</span><img src="../images/new.png" width="26" style="margin:5px;" />
+                        </h4>
+                        <div class="content comment">
+                            
+                            <p><a href="../usermessage/3.html" class="name aut">
+                                    
+                                         test
+                                    
+                                </a> 评论了
+                                <a href="../article/32.html" class="name"> 《快速学习JS的思考方法》 </a>
+                            </p>
+                            <p class="comment-con">
+                                
+                                     <img class="emoji_icon" src="../emoji/dist/img/tieba/2.jpg">
+                                
+                            </p>
+                            
+                            <p><a href="../usermessage/3.html" class="name aut">
+                                    
+                                         test
+                                    
+                                </a> 评论了
+                                <a href="../article/7.html" class="name"> 《NodeJS之queryString》 </a>
+                            </p>
+                            <p class="comment-con">
+                                
+                                     先来一条评论~
+                                
+                            </p>
+                            
+                            <p><a href="../usermessage/3.html" class="name aut">
+                                    
+                                         test
+                                    
+                                </a> 评论了
+                                <a href="../article/21.html" class="name"> 《程序员，如何从平庸走向理想？》 </a>
+                            </p>
+                            <p class="comment-con">
+                                
+                                     <img class="emoji_icon" src="../emoji/dist/img/tieba/25.jpg"><img class="emoji_icon" src="../emoji/dist/img/tieba/25.jpg">
+                                
+                            </p>
+                            
+                            <p><a href="../usermessage/4.html" class="name aut">
+                                    
+                                         哈利波特
+                                    
+                                </a> 评论了
+                                <a href="../article/3.html" class="name"> 《苹果App Store全面禁止热更新 不移除相关代码会下架》 </a>
+                            </p>
+                            <p class="comment-con">
+                                
+                                     ...
+                                
+                            </p>
+                            
+                            <p><a href="../usermessage/2.html" class="name aut">
+                                    
+                                         苏寒
+                                    
+                                </a> 评论了
+                                <a href="../article/3.html" class="name"> 《苹果App Store全面禁止热更新 不移除相关代码会下架》 </a>
+                            </p>
+                            <p class="comment-con">
+                                
+                                     第一次评论好紧张！<img class="emoji_icon" src="../emoji/dist/img/tieba/30.jpg">
+                                
+                            </p>
+                            
+                        </div>
+                    </div>
+                    <!-- end tag cloud widget -->
+
+                    <!-- start widget -->
+                    <div class="widget">
+                        <h4 class="title">
+                            <span class="newtitle">最新文章</span><img src="../images/new.png" width="26" style="margin:5px;" />
+                            <span class="more"><a href="../article/list-1.html">更多</a></span>
+                        </h4>
+                        <div class="content">
+                            
+                            <p><a href="article/32.html">  快速学习JS的思考方法 </a></p>
+                            
+                            <p><a href="article/31.html">  在2016年如何学习JavaScript？ </a></p>
+                            
+                            <p><a href="article/30.html">  纯福利 | 前端新人面试题汇总-基础篇 </a></p>
+                            
+                            <p><a href="article/21.html">  程序员，如何从平庸走向理想？ </a></p>
+                            
+                            <p><a href="article/20.html">  广告被拦截怎么破？谷歌将允许网站向用户收费. </a></p>
+                            
+                            <p><a href="article/16.html">  Github用户总结各大网站服务愚蠢密码规则 </a></p>
+                            
+                            <p><a href="article/7.html">  NodeJS之queryString </a></p>
+                            
+                            <p><a href="article/3.html">  苹果App Store全面禁止热更新 不移除相关代码会下架 </a></p>
+                            
+                        </div>
+                    </div>
+                    <!-- end widget -->
+                </aside>
+
+            </div>
+        </div>
+    </section>
+</div>
+
+
+<footer class="foot">
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <span>Copyright &copy; 2017</span> |
+                    <span>Power by LiChangtao</span> |
+                    <span><a href="http://www.miibeian.gov.cn/" target="_blank">桂ICP备16010724号</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery.mixitup.js"></script>
+    <script src="../js/jquery.countTo.js"></script>
+    <script src="../js/jquery.waypoints.min.js"></script>
+    <script src="../js/jquery.quovolver.js"></script>
+    <script src="../layer/layer.js"></script>
+    <script src="../layer/layui/layui.js"></script>
+    <script>
+        $(function(){
+            $('#galleryimg').mixItUp();
+        });
+        jQuery(function ($) {
+            // custom formatting example
+            $('.timer').data('countToOptions', {
+                formatter: function (value, options) {
+                    return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
+                }
+            });
+            // start all the timers
+            $('#gallery').waypoint(function() {
+                $('.timer').each(count);
+            });
+            function count(options) {
+                var $this = $(this);
+                options = $.extend({}, options || {}, $this.data('countToOptions') || {});
+                $this.countTo(options);
+            }
+        });
+        $('.quotes').quovolver({
+            equalHeight   : true
+        });
+    </script>
+    <script>
+        function onScroll(event){
+            var scrollPosition = $(document).scrollTop();
+            $('.nav li a').each(function () {
+                var currentLink = $(this);
+                var refElement = $(currentLink.attr("href"));
+                if (refElement.position().top <= scrollPosition && refElement.position().top + refElement.height() > scrollPosition) {
+                    $('.nav li a').removeClass("active");
+                    currentLink.addClass("active");
+                }
+                else{
+                    currentLink.removeClass("active");
+                }
+            });
+        }
+    </script>
+
+    <script>
+        /*评论提交*/
+        $('.con').keyup(function () {
+            var $this = $(this);
+            var textlen = $this.text().length;//不包含表情
+            if(textlen > 150){
+                $this.text($this.text().substring(0,150));
+            }
+        })
+
+        $('.send').click(function () {
+
+            /*console.log(text);
+            console.log(text.length);
+            if( html.indexOf("emoji_icon") > 0 ){
+                len += 1;
+            }
+            alert(len);*/
+            var $editor = $('#editor');
+            var html = $editor.html();
+
+            if( html.replace(/(^\s*)|(\s*$)/g, "")=="" ){
+                layer.msg('请填写评论内容', {
+                    icon: 3, //1，绿勾  2，红叉  3，黄问号  4，灰色锁头  5，红色委屈脸  6，绿色笑脸 7，黄色感叹号
+                    skin: 'layer-ext-moon',
+                    time : '1000'
+                })
+                return;
+            }
+            html = html.replace(/[ | ]*\n/g, ''); //去除行尾空白
+            html = html.replace(/&nbsp;/ig, ''); //去掉尾部空格
+
+/*          var $this = $(this);
+            console.log('按键按下');
+            var str = $this.html();
+            if(str.indexOf("emoji_icon") > 0 ){
+                str = str.replace(/<\/?[^>]*>/g, ''); //去除HTML tag
+                str = str.replace(/[ | ]*\n/g, ''); //去除行尾空白
+                str = str.replace(/&nbsp;/ig, ''); //去掉尾部空格
+                console.log(str);
+                console.log(str.length+1);
+            }else{
+                console.log('--------');
+                str = str.replace(/[ | ]*\n/g, ''); //去除行尾空白
+                str = str.replace(/&nbsp;/ig, ''); //去掉尾部空格
+                console.log(str);
+                console.log(str.length);
+            }*/
+
+            $.ajax({
+                url : '/article/31.html',
+                type : 'post',
+                dataType : 'json',
+                data:{
+                    content : html
+                },
+                success (data){
+                    if(data.unlog){
+                        layer.msg('请先登录',{
+                            icon: 4, //1，绿勾  2，红叉  3，黄问号  4，灰色锁头  5，红色委屈脸  6，绿色笑脸 7，黄色感叹号
+                            time:1000
+                        });
+                    }
+                    if(data.err){
+                        layer.msg('发生错误',{
+                            icon: 5, //1，绿勾  2，红叉  3，黄问号  4，灰色锁头  5，红色委屈脸  6，绿色笑脸 7，黄色感叹号
+                            time:1000
+                        });
+                    }
+                    if(data.succ){
+                        layer.msg('评论成功', {
+                            icon: 1, //1，绿勾  2，红叉  3，黄问号  4，灰色锁头  5，红色委屈脸  6，绿色笑脸 7，黄色感叹号
+                            time: 1000
+                        });
+                        setTimeout(function () {
+                            window.location.reload();//刷新当前页面
+                        },1000);
+                    }
+                    // window.location.replace('/reg');//跳转到指定路径
+                },
+                error (data){
+                    layer.msg('sorry~~ 评论失败');
+                    setTimeout(function () {
+                        window.location.reload();//刷新当前页面
+                    },1500);
+                }
+            })
+        });
+
+    </script>
+    <script src="../emoji/lib/script/highlight.pack.js"></script>
+    <script src="../emoji/lib/script/jquery.mousewheel-3.0.6.min.js"></script>
+    <script src="../emoji/lib/script/jquery.mCustomScrollbar.min.js"></script>
+    <script src="../emoji/dist/js/jquery.emoji.min.js"></script>
+    <script src="../js/jquery.cookie.js"></script>
+    <script>
+        /* 评论加载表情 */
+        hljs.initHighlightingOnLoad();
+        function onloadimg(){
+            $("#editor").emoji({
+                showTab: true,
+                animation: 'fade',
+                icons: [{
+                    name: "贴吧表情",
+                    path: "/emoji/dist/img/tieba/",
+                    maxNum: 50,
+                    file: ".jpg",
+                    placeholder: ":{alias}:",
+                    alias: {
+                        1: "hehe",
+                        2: "haha",
+                        3: "tushe",
+                        4: "a",
+                        5: "ku",
+                        6: "lu",
+                        7: "kaixin",
+                        8: "han",
+                        9: "lei",
+                        10: "heixian",
+                        11: "bishi",
+                        12: "bugaoxing",
+                        13: "zhenbang",
+                        14: "qian",
+                        15: "yiwen",
+                        16: "yinxian",
+                        17: "tu",
+                        18: "yi",
+                        19: "weiqu",
+                        20: "huaxin",
+                        21: "hu",
+                        22: "xiaonian",
+                        23: "neng",
+                        24: "taikaixin",
+                        25: "huaji",
+                        26: "mianqiang",
+                        27: "kuanghan",
+                        28: "guai",
+                        29: "shuijiao",
+                        30: "jinku",
+                        31: "shengqi",
+                        32: "jinya",
+                        33: "pen",
+                        34: "aixin",
+                        35: "xinsui",
+                        36: "meigui",
+                        37: "liwu",
+                        38: "caihong",
+                        39: "xxyl",
+                        40: "taiyang",
+                        41: "qianbi",
+                        42: "dnegpao",
+                        43: "chabei",
+                        44: "dangao",
+                        45: "yinyue",
+                        46: "haha2",
+                        47: "shenli",
+                        48: "damuzhi",
+                        49: "ruo",
+                        50: "OK"
+                    },
+                    title: {
+                        1: "呵呵",
+                        2: "哈哈",
+                        3: "吐舌",
+                        4: "啊",
+                        5: "酷",
+                        6: "怒",
+                        7: "开心",
+                        8: "汗",
+                        9: "泪",
+                        10: "黑线",
+                        11: "鄙视",
+                        12: "不高兴",
+                        13: "真棒",
+                        14: "钱",
+                        15: "疑问",
+                        16: "阴脸",
+                        17: "吐",
+                        18: "咦",
+                        19: "委屈",
+                        20: "花心",
+                        21: "呼~",
+                        22: "笑脸",
+                        23: "冷",
+                        24: "太开心",
+                        25: "滑稽",
+                        26: "勉强",
+                        27: "狂汗",
+                        28: "乖",
+                        29: "睡觉",
+                        30: "惊哭",
+                        31: "生气",
+                        32: "惊讶",
+                        33: "喷",
+                        34: "爱心",
+                        35: "心碎",
+                        36: "玫瑰",
+                        37: "礼物",
+                        38: "彩虹",
+                        39: "星星月亮",
+                        40: "太阳",
+                        41: "钱币",
+                        42: "灯泡",
+                        43: "茶杯",
+                        44: "蛋糕",
+                        45: "音乐",
+                        46: "haha",
+                        47: "胜利",
+                        48: "大拇指",
+                        49: "弱",
+                        50: "OK"
+                    }
+                }, {
+                    path: "/emoji/dist/img/qq/",
+                    name: "qq表情",
+                    maxNum: 52,
+                    excludeNums: [41, 45, 54],
+                    file: ".gif",
+                    placeholder: "#qq_{alias}#"
+                }]
+            });
+        }
+        //打开网页自动加载表情
+        window.onload = onloadimg;
+        setInterval(function(){
+            var left = $('.imgbtn').offset().left;
+            var top = $('.imgbtn').offset().top;
+            $('.emoji_btn').css({
+                left  : left,
+                top : top
+            });
+        },100);
+        /*退出*/
+        function logout(){
+            $.cookie("login", "false", { expires: -1 });        // 删除 cookie
+            window.location.reload();
+        }
+        /*收藏*/
+        $('.shoucang').click(function () {
+            if(true){
+                layer.msg('请先登录',{
+                    icon: 4, //1，绿勾  2，红叉  3，黄问号  4，灰色锁头  5，红色委屈脸  6，绿色笑脸 7，黄色感叹号
+                    time:1000
+                });
+                return;
+            }
+            var $this = $(this);
+            var pid = $this.attr('pid');
+            var uid = $this.attr('uid');
+            if(){
+                $.ajax({
+                    url : '/admin/collectArticle',
+                    type : 'post',
+                    dataType : 'json',
+                    data : {
+                        pid : pid,
+                        uid : uid
+                    },
+                    success(data){
+                        if(data.unlog){
+                            layer.msg('请先登录',{
+                                icon: 4, //1，绿勾  2，红叉  3，黄问号  4，灰色锁头  5，红色委屈脸  6，绿色笑脸 7，黄色感叹号
+                                time:1000
+                            });
+                            return;
+                        }
+                        if(data.res){
+                            layer.msg('您已经收藏过了',{
+                                icon: 6, //1，绿勾  2，红叉  3，黄问号  4，灰色锁头  5，红色委屈脸  6，绿色笑脸 7，黄色感叹号
+                                time:1000
+                            });
+                            return;
+                        }
+                        if(data.succ){
+                            layer.msg('收藏成功',{
+                                icon: 1, //1，绿勾  2，红叉  3，黄问号  4，灰色锁头  5，红色委屈脸  6，绿色笑脸 7，黄色感叹号
+                                time:1000
+                            });
+                            setTimeout(function () {
+                                window.location.reload();//刷新当前页面
+                            },1000)
+                        }
+                        if(data.err){
+                            layer.msg('发生错误',{
+                                icon: 7, //1，绿勾  2，红叉  3，黄问号  4，灰色锁头  5，红色委屈脸  6，绿色笑脸 7，黄色感叹号
+                                time:1000
+                            });
+                        }
+                    },
+                    error(data){
+
+                    }
+                })
+            }else{
+                $.ajax({
+                    url : '/useradmin/collectArticle',
+                    type : 'post',
+                    dataType : 'json',
+                    data : {
+                        pid : pid,
+                        uid : uid
+                    },
+                    success(data){
+                        if(data.unlog){
+                            layer.msg('请先登录',{
+                                icon: 4, //1，绿勾  2，红叉  3，黄问号  4，灰色锁头  5，红色委屈脸  6，绿色笑脸 7，黄色感叹号
+                                time:1000
+                            });
+                            return;
+                        }
+                        if(data.res){
+                            layer.msg('您已经收藏过了',{
+                                icon: 6, //1，绿勾  2，红叉  3，黄问号  4，灰色锁头  5，红色委屈脸  6，绿色笑脸 7，黄色感叹号
+                                time:1000
+                            });
+                            return;
+                        }
+                        if(data.succ){
+                            layer.msg('收藏成功',{
+                                icon: 1, //1，绿勾  2，红叉  3，黄问号  4，灰色锁头  5，红色委屈脸  6，绿色笑脸 7，黄色感叹号
+                                time:1000
+                            });
+                            setTimeout(function () {
+                                window.location.reload();//刷新当前页面
+                            },1000)
+                        }
+                        if(data.err){
+                            layer.msg('发生错误',{
+                                icon: 7, //1，绿勾  2，红叉  3，黄问号  4，灰色锁头  5，红色委屈脸  6，绿色笑脸 7，黄色感叹号
+                                time:1000
+                            });
+                        }
+                    },
+                    error(data){
+
+                    }
+                })
+            }
+
+        });
+        /*点赞*/
+        $('.zan').click(function () {
+            if(true){
+                layer.msg('请先登录',{
+                    icon: 4, //1，绿勾  2，红叉  3，黄问号  4，灰色锁头  5，红色委屈脸  6，绿色笑脸 7，黄色感叹号
+                    time:1000
+                });
+                return;
+            }
+            var $this = $(this);
+            var pid = $this.attr('pid');
+            var uid = $this.attr('uid');
+            if(){
+                $.ajax({
+                    url : '/admin/praiseArticle',
+                    type : 'post',
+                    dataType : 'json',
+                    data : {
+                        pid : pid,
+                        uid : uid
+                    },
+                    success(data){
+                        if(data.res){
+                            layer.msg('您已经赞过了',{
+                                icon: 6, //1，绿勾  2，红叉  3，黄问号  4，灰色锁头  5，红色委屈脸  6，绿色笑脸 7，黄色感叹号
+                                time:1000
+                            });
+                            return;
+                        }
+                        if(data.succ){
+                            layer.msg('好文章赞一个',{
+                                icon: 1, //1，绿勾  2，红叉  3，黄问号  4，灰色锁头  5，红色委屈脸  6，绿色笑脸 7，黄色感叹号
+                                time:1000
+                            });
+                            setTimeout(function () {
+                                window.location.reload();//刷新当前页面
+                            },1000)
+                        }
+                        if(data.err){
+                            layer.msg('发生错误',{
+                                icon: 7, //1，绿勾  2，红叉  3，黄问号  4，灰色锁头  5，红色委屈脸  6，绿色笑脸 7，黄色感叹号
+                                time:1000
+                            });
+                        }
+                    },
+                    error(data){
+
+                    }
+                })
+            }else{
+                $.ajax({
+                    url : '/useradmin/praiseArticle',
+                    type : 'post',
+                    dataType : 'json',
+                    data : {
+                        pid : pid,
+                        uid : uid
+                    },
+                    success(data){
+                        if(data.res){
+                            layer.msg('您已经赞过了',{
+                                icon: 6, //1，绿勾  2，红叉  3，黄问号  4，灰色锁头  5，红色委屈脸  6，绿色笑脸 7，黄色感叹号
+                                time:1000
+                            });
+                            return;
+                        }
+                        if(data.succ){
+                            layer.msg('好文章赞一个',{
+                                icon: 1, //1，绿勾  2，红叉  3，黄问号  4，灰色锁头  5，红色委屈脸  6，绿色笑脸 7，黄色感叹号
+                                time:1000
+                            });
+                            setTimeout(function () {
+                                window.location.reload();//刷新当前页面
+                            },1000)
+                        }
+                        if(data.err){
+                            layer.msg('发生错误',{
+                                icon: 7, //1，绿勾  2，红叉  3，黄问号  4，灰色锁头  5，红色委屈脸  6，绿色笑脸 7，黄色感叹号
+                                time:1000
+                            });
+                        }
+                    },
+                    error(data){
+
+                    }
+                })
+            }
+        });
+    </script>
+</body>
+</html>
